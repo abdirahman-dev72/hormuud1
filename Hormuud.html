@@ -1,369 +1,519 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HORMUUD</title>
+    <meta name="description" content="Hormuud - Leading telecommunications provider in Somalia offering mobile, internet, and digital services">
+    <meta name="keywords" content="Hormuud, telecommunications, mobile, internet, Somalia, EVC Plus, mobile money">
+    <title>Hormuud - Leading Telecommunications Provider</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <img class="tr" src="Hormuud logo.svg" alt="">
-        <nav>
-            <ul>
-                <li> <a href="">Home</a></li>
-                <li> <a href="">Personal <i class="fas fa-chevron-down"></i></a></li>
-                <li> <a href="">Business <i class="fas fa-chevron-down"></i></a></li>
-                <li> <a href="">Who We Are <i class="fas fa-chevron-down"></i></a></li>
-                <li> <a href="">Media <i class="fas fa-chevron-down"></i></a></li>
-                <li> <a href="">Contac Us</a></li>
-               
-            </ul>
-        </nav>
-        <div class="icons">
-        <i class="fa-regular fa-heart"></i>
-        <i class="fa-solid fa-bag-shopping"></i>
-    </div>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="Hormuud logo.svg" alt="Hormuud Logo">
+            </div>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <!-- Navigation -->
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#personal" class="nav-link">Personal <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#mobile">Mobile Services</a></li>
+                            <li><a href="#internet">Internet</a></li>
+                            <li><a href="#evc">EVC Plus</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#business" class="nav-link">Business <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#enterprise">Enterprise Internet</a></li>
+                            <li><a href="#sms">MySMS API</a></li>
+                            <li><a href="#ivr">IVR Services</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#about" class="nav-link">Who We Are <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#company">Company</a></li>
+                            <li><a href="#careers">Careers</a></li>
+                            <li><a href="#news">News</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#media" class="nav-link">Media <i class="fas fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#press">Press Releases</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact" class="nav-link">Contact Us</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Header Controls -->
+            <div class="header-controls">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-sun light-icon"></i>
+                    <i class="fas fa-moon dark-icon"></i>
+                </button>
+                
+                <div class="header-icons">
+                    <a href="#favorites" class="icon-link" aria-label="Favorites">
+                        <i class="far fa-heart"></i>
+                    </a>
+                    <a href="#cart" class="icon-link" aria-label="Shopping cart">
+                        <i class="fas fa-shopping-bag"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
     </header>
 
-    <div class="container">
-        <div class="a">
-            <div class=" aa">
-            <h1>AFFORDABLE <br>PACKAGE FOR YOU</h1>
-            <p class="e">Get Umlimited Mobile Internet And Voice Calls For 30 Days ,All For Jus $20!</p>
-            <button class="d">Get It Now <i class="fa-solid fa-arrow-right"></i></button>
-        </div>
-            <div class="b">
-            <img class="c" src="Kudhan_Monthly (1).avif" alt="">
-        </div>
-        </div>
-        
-        <div class="f">
-            <div class="i">
-                <img src="WifiIcon.svg" alt="">
-                <h2>EVC Plus</h2>
-                <p >One of Africa`s most secure <br>mobile money platforms</p>
-            </div>
-            <div class="i">
-                <img src="Mobiledata.svg" alt="">
-                <h2>EVC Plus</h2>
-                <p>One of Africa`s most secure <br>mobile money platforms</p>
-            </div>
-            <div class="i">
-                <img src="Mobilemoney.svg" alt="">
-                <h2>EVC Plus</h2>
-                <p>One of Africa`s most secure <br>mobile money platforms</p>
-               
-            </div>
-        </div>
-
-         <div class="dheer">
-                    <img src="images dheer.jpeg" alt="">
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        AFFORDABLE <br>
+                        <span class="highlight">PACKAGE FOR YOU</span>
+                    </h1>
+                    <p class="hero-description">
+                        Get unlimited mobile internet and voice calls for 30 days, all for just $20!
+                    </p>
+                    <button class="btn btn-primary btn-large">
+                        Get It Now <i class="fas fa-arrow-right"></i>
+                    </button>
                 </div>
-
-        <div class="vb">
-            <div class="l">
-                <img src="Anfacimageup-01.avif" alt="">
-            </div>
-            <div class="pl">
-                <h1>
-                    Talk longer for less</h1>
-                <p>With 80 minutes of calls from as little as $1, never leave <br>a story untold when you opt for onebr
-                     of Hormuud`s local packages.</p>
-                     <button class="btn-get">GET STARTED NOW  <i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-        </div>
-  
-        <div class="m">
-            <h2>Our customers’ favourite personal products</h2>
-            <p>Here are some of our customers’ favorite personal products & services</p>
-        </div >
-        <div class="gride">
-            <div class="n">
-                <i class="fa-solid fa-phone"> </i>
-                <strong>VOICE CALL</strong>
-            </div>
-            <div class="n">
-                <i class="fa-regular fa-envelope"></i>
-                <strong>EVC PLUS</strong>
-            </div>
-            <div class="n">
-                <i class="fa-solid fa-sms"> </i>
-                <strong>SMS</strong>
-            </div>
-            <div class="n">
-                <i class="fa-solid fa-wifi"> </i>
-                <strong>WI-FI</strong>
-            </div>
-            <div class="n">
-                <i class="fa-solid fa-route"> </i>
-                <strong>ROUTER</strong>
-            </div>
-            <div class="n">
-                <i class="fa-solid fa-sim-card"> </i>
-                <strong>SIM-CARD</strong>
-            </div>
-            <div class="n">
-                <i class="fa-solid fa-add"> </i>
-                <strong>ADD CALL</strong>
-            </div>
-            <div class="n">
-                <i class="fa-solid fa-sim-card"> </i>
-                <strong>SIM-CARD</strong>
-            </div>
-        </div>
-    
-
-        <div class="vvc">
-            <h1>Our customers’ favourite business products</h1>
-            <p>Grow you business and engage your customers through SMS marketing, fully integrated into your business system</p>
-        </div>
-        <div class="cars">
-            <div class="card1">
-                <img src="MobileSMS.svg" alt="">
-                <h2>Enterprise Internet</h2>
-                <p>Lightning-fast, secure and</p>
-                <p>reliable enterprise internet</p>
-                <p>connections for large</p>
-                <p>institutions and</p>
-                <p>organizations.</p>
-            </div>
-
-            <div class="card2">
-                <img src="internet-svg.svg" alt="">
-                <h2>My SMS API</h2>
-                <p>Empower your organization</p>
-                <p>to build and deliver</p>
-                <p>marketing sms while</p>
-                <p>integrating and</p>
-                <p>collaborating with our</p>
-                <p>messaging api.</p>
-            </div>
-
-            <div class="card1">
-                <img src="ivr.svg" alt="">
-                <h2>IVR</h2>
-                <p>Customer service call</p>
-                <p>centres made easy. </p>
-            </div>
-
-            <div class="card4">
-                <img src="ussd.svg" alt="">
-                <h2>USSD Short Codes</h2>
-                <p>Strengthen customer </p>
-                    <p> relationships and reach your </p>
-                   <p> global audience with special </p>
-                   <p> short codes. </p>
-            </div>
-        </div>
-
-        <div class="yt">
-            <h1>Choose The Best FTTH Plan For You</h1>
-            <p>Subscribe your favorite bundle and enjoy high speed 5G internet</p>
-        </div>
-
-
-        <div class="gf">
-
-        <div class="card">
-            <h3>ADSL+ PACKAGE</h3>
-            <h1>$25<small>/package</small></h1>
-            <button class="btn">RECHARGE NOW!</button>
-          
-            <div class="divider"></div>
-          
-            <ul class="features">
-              <li>✅ Unlimited GB</li>
-              <li>✅ 20MBps</li>
-              <li>✅ 200 Mins</li>
-              <li  style="color: #ccc; text-decoration: line-through;">🚫 Int Minutes</li>
-              <li>✅ Valid for 30 Days</li>
-              <li>✅ Super Speed</li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <div class="card-header">Best Deal</div>
-
-            <h1>$30<small>/package</small></h1>
-            <button class="btn">RECHARGE NOW!</button>
-          
-            <div class="divider"></div>
-          
-            <ul class="features">
-              <li>✅ Unlimited GB</li>
-              <li>✅ 20MBps</li>
-              <li>✅ 200 Mins</li>
-              <li  style="color: #ccc; text-decoration: line-through;">🚫 Int Minutes</li>
-              <li>✅ Valid for 30 Days</li>
-              <li>✅ Super Speed</li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <h3>ADSL+ PACKAGE</h3>
-            <h1>$50<small>/package</small></h1>
-            <button class="btn">RECHARGE NOW!</button>
-          
-            <div class="divider"></div>
-          
-            <ul class="features">
-              <li>✅ Unlimited GB</li>
-              <li>✅ 20MBps</li>
-              <li>✅ 200 Mins</li>
-              <li  style="color: #ccc; text-decoration: line-through;">🚫 Int Minutes</li>
-              <li>✅ Valid for 30 Days</li>
-              <li>✅ Super Speed</li>
-            </ul>
-          </div>
-
-          <div class="card">
-            <h3>ADSL+ PACKAGE</h3>
-            <h1>$90<small>/package</small></h1>
-            <button class="btn">RECHARGE NOW!</button>
-          
-            <div class="divider"></div>
-          
-            <ul class="features">
-              <li>✅ Unlimited GB</li>
-              <li>✅ 20MBps</li>
-              <li>✅ 200 Mins</li>
-              <li  style="color: #ccc; text-decoration: line-through;">🚫 Int Minutes</li>
-              <li>✅ Valid for 30 Days</li>
-              <li>✅ Super Speed</li>
-            </ul>
-          </div>
-
-        </div>
-
-        <div class="xz">
-            <div class="s">
-                <h1>Reach and Engage More Customers With MYSMS</h1>
-                <p>90% of SMS messages are read within 3 minutes. If you're not engaging with your customers and prospects <br> through text messages, you're missing out on one of the most available and <br> engaged channels for your business.</p>
-                <button>STAR FOR FREE <i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-            <div class="qw">
-                <img src="Screenshot 2025-05-09 103931.png" alt="">
-            </div>
-        </div>
-
-         <div class="bj">
-                <h1>Latest Blog Updates From Hormuud</h1>
-                <p>Read all the latest information, Blogs, Updates, Offers and much more</p>
-            </div>
-
-            <div class="w" >
-                <div class="z">
-                    <img src="KUDHAN.avif" alt="">
-                    <h2>Unlimited Everything at Your Fingertips! <br> Explore Our Newest Service</h2>
-                    <p>We are thrilled to announce KUDHAN, our newest <br> addition to our fantastic service lineup! <br>
-
-Designed to cater to the ever-growing needs <br> of our customers, KUDHAN offers unparalleled connectivity options  <br> with two flexible packages: daily and monthly. Now, <br> you can enjoy unlimited Internet, calls, and IPTV (Nasiye)  with <br> ease and affordability.</p>
-
-                    <p class="nb">READ MORE  <i class="fa-solid fa-arrow-right"></i></p>
-                </div>
-
-                  <div class="z">
-                    <img src="Renewable20.avif" alt="">
-                    <h2>Unlimited Everything at Your Fingertips! <br> Explore Our Newest Service</h2>
-                    <p>We are thrilled to announce KUDHAN, our newest <br> addition to our fantastic service lineup! <br>
-
-Designed to cater to the ever-growing needs <br> of our customers, KUDHAN offers unparalleled connectivity options  <br> with two flexible packages: daily and monthly. Now, <br> you can enjoy unlimited Internet, calls, and IPTV (Nasiye)  with <br> ease and affordability.</p>
-
-                    <p class="nb">READ MORE  <i class="fa-solid fa-arrow-right"></i></p>
-                </div>
-
-                  <div class="z">
-                    <img src="KUDHAN.avif" alt="">
-                    <h2>Unlimited Everything at Your Fingertips! <br> Explore Our Newest Service</h2>
-                    <p>We are thrilled to announce KUDHAN, our newest <br> addition to our fantastic service lineup! <br>
-
-Designed to cater to the ever-growing needs <br> of our customers, KUDHAN offers unparalleled connectivity options  <br> with two flexible packages: daily and monthly. Now, <br> you can enjoy unlimited Internet, calls, and IPTV (Nasiye)  with <br> ease and affordability.</p>
-                   <p class="nb">READ MORE  <i class="fa-solid fa-arrow-right"></i></p>
+                <div class="hero-image">
+                    <img src="Kudhan_Monthly (1).avif" alt="Hormuud Mobile Package" class="hero-img">
                 </div>
             </div>
+        </section>
 
-
-
-            <footer>
-
-
-            <div class="o">
-                <div class="u">
-                    <img src="Hormuud logo.svg" alt="">
-                </div>
-                <div class="po">
-                    <h2>Subscribe to our Newsletter</h2>
-                    <p>Get all the latest information, Sales and Offers.</p>
-                </div>
-             <input type="email" name="" id="email" class="Email" placeholder="Email Addres Here">
- <button class="et">Subscribe    <i class="fa-solid fa-arrow-right"></i></button>
-            </div>  
-
-            <div class="footer">
-                <div class="lui">
-                    <h5>Contact Info</h5>
-                    <h3>Phone:</h3>
-                    <h5>Call Free 615413872</h5>
-                    <h3>Email:</h3>
-                    <h5>Manaxayare@gmail.com</h5>
-                    <h3>Address:</h3>
-                    <h5>Darusalam-Mogadishu-Somalia</h5>
+        <!-- Services Overview -->
+        <section class="services-overview">
+            <div class="services-container">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="WifiIcon.svg" alt="WiFi Icon">
+                    </div>
+                    <h3 class="service-title">EVC Plus</h3>
+                    <p class="service-description">
+                        One of Africa's most secure mobile money platforms
+                    </p>
                 </div>
                 
-                 <div>
-                    <h3>Corporate</h3>
-                    <h5>About Us</h5>
-                    <h5>Press Release</h5>
-                    <h5>Sosial Responsibilities</h5>
-                    <h5>Customer Server</h5>
-                    <h5>Terms And Conditions</h5>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="Mobiledata.svg" alt="Mobile Data Icon">
+                    </div>
+                    <h3 class="service-title">Mobile Data</h3>
+                    <p class="service-description">
+                        Fast and reliable mobile internet connectivity
+                    </p>
                 </div>
-
-                  <div>
-                    <h3>Personal</h3>
-                    <h5>Period</h5>
-                    <h5>PostPoid</h5>
-                    <h5>AnfacPlus</h5>
-                    <h5>ADSL Plus</h5>
-                    <h5>Offers</h5>
-                </div>
-
-                  <div>
-                    <h3>Business</h3>
-                    <h5>MySMS</h5>
-                    <h5>Messaging API</h5>
-                    <h5>Enterprise internet</h5>
-                    <h5>IVE(call center)</h5>
-                    <h5>USSD Shortcode</h5>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="Mobilemoney.svg" alt="Mobile Money Icon">
+                    </div>
+                    <h3 class="service-title">Mobile Money</h3>
+                    <p class="service-description">
+                        Secure digital payments and money transfers
+                    </p>
                 </div>
             </div>
+        </section>
 
-            <div class="sde"></div>
+        <!-- Background Image Section -->
+        <section class="background-section">
+            <img src="images dheer.jpeg" alt="Hormuud Background" class="background-image">
+        </section>
 
-            <div class="t9">
-                <div class="i9">
-                    <p>Hormuud.com © 2025 All Rights Reserved.</p>
+        <!-- Talk Longer Section -->
+        <section class="talk-section">
+            <div class="talk-container">
+                <div class="talk-image">
+                    <img src="Anfacimageup-01.avif" alt="Talk Longer for Less">
                 </div>
-                <div class="j9">
-                        <a href="https://www.facebook.com/profile.php?id=61565602565542&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a> 
-        <a href="https://wa.me/message/AYEQVO2HN26PJ1"> <i class="fa-brands fa-whatsapp"></i></a>
-       <a href="https://www.instagram.com/wll_manaxa/profilecard/?igsh=MWE2eWd0bDJncTh3dw=="> <i class="fa-brands fa-instagram"></i></a>
-                       
-                   
+                <div class="talk-content">
+                    <h2 class="section-title">Talk longer for less</h2>
+                    <p class="section-description">
+                        With 80 minutes of calls from as little as $1, never leave a story untold when you opt for one of Hormuud's local packages.
+                    </p>
+                    <button class="btn btn-primary">
+                        Get Started Now <i class="fas fa-arrow-right"></i>
+                    </button>
                 </div>
             </div>
+        </section>
 
-            </footer>
+        <!-- Personal Products Section -->
+        <section class="products-section">
+            <div class="section-header">
+                <h2 class="section-title">Our customers' favourite personal products</h2>
+                <p class="section-subtitle">Here are some of our customers' favorite personal products & services</p>
+            </div>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <i class="fas fa-phone product-icon"></i>
+                    <h3 class="product-title">Voice Call</h3>
+                </div>
+                
+                <div class="product-card">
+                    <i class="far fa-envelope product-icon"></i>
+                    <h3 class="product-title">EVC Plus</h3>
+                </div>
+                
+                <div class="product-card">
+                    <i class="fas fa-sms product-icon"></i>
+                    <h3 class="product-title">SMS</h3>
+                </div>
+                
+                <div class="product-card">
+                    <i class="fas fa-wifi product-icon"></i>
+                    <h3 class="product-title">Wi-Fi</h3>
+                </div>
+                
+                <div class="product-card">
+                    <i class="fas fa-route product-icon"></i>
+                    <h3 class="product-title">Router</h3>
+                </div>
+                
+                <div class="product-card">
+                    <i class="fas fa-sim-card product-icon"></i>
+                    <h3 class="product-title">SIM Card</h3>
+                </div>
+                
+                <div class="product-card">
+                    <i class="fas fa-plus product-icon"></i>
+                    <h3 class="product-title">Add Call</h3>
+                </div>
+                
+                <div class="product-card">
+                    <i class="fas fa-sim-card product-icon"></i>
+                    <h3 class="product-title">SIM Card</h3>
+                </div>
+            </div>
+        </section>
 
+        <!-- Business Products Section -->
+        <section class="business-section">
+            <div class="section-header">
+                <h2 class="section-title">Our customers' favourite business products</h2>
+                <p class="section-subtitle">
+                    Grow your business and engage your customers through SMS marketing, fully integrated into your business system
+                </p>
+            </div>
+            
+            <div class="business-cards">
+                <div class="business-card business-card-primary">
+                    <div class="card-icon">
+                        <img src="MobileSMS.svg" alt="Enterprise Internet">
+                    </div>
+                    <h3 class="card-title">Enterprise Internet</h3>
+                    <p class="card-description">
+                        Lightning-fast, secure and reliable enterprise internet connections for large institutions and organizations.
+                    </p>
+                </div>
+                
+                <div class="business-card business-card-secondary">
+                    <div class="card-icon">
+                        <img src="internet-svg.svg" alt="My SMS API">
+                    </div>
+                    <h3 class="card-title">My SMS API</h3>
+                    <p class="card-description">
+                        Empower your organization to build and deliver marketing SMS while integrating and collaborating with our messaging API.
+                    </p>
+                </div>
+                
+                <div class="business-card business-card-primary">
+                    <div class="card-icon">
+                        <img src="ivr.svg" alt="IVR">
+                    </div>
+                    <h3 class="card-title">IVR</h3>
+                    <p class="card-description">
+                        Customer service call centres made easy.
+                    </p>
+                </div>
+                
+                <div class="business-card business-card-dark">
+                    <div class="card-icon">
+                        <img src="ussd.svg" alt="USSD Short Codes">
+                    </div>
+                    <h3 class="card-title">USSD Short Codes</h3>
+                    <p class="card-description">
+                        Strengthen customer relationships and reach your global audience with special short codes.
+                    </p>
+                </div>
+            </div>
+        </section>
 
+        <!-- FTTH Plans Section -->
+        <section class="plans-section">
+            <div class="section-header">
+                <h2 class="section-title">Choose The Best FTTH Plan For You</h2>
+                <p class="section-subtitle">Subscribe your favorite bundle and enjoy high speed 5G internet</p>
+            </div>
+            
+            <div class="plans-grid">
+                <div class="plan-card">
+                    <h3 class="plan-name">ADSL+ PACKAGE</h3>
+                    <div class="plan-price">
+                        <span class="price">$25</span>
+                        <span class="period">/package</span>
+                    </div>
+                    <button class="btn btn-primary">Recharge Now!</button>
+                    <div class="plan-divider"></div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Unlimited GB</li>
+                        <li><i class="fas fa-check"></i> 20MBps</li>
+                        <li><i class="fas fa-check"></i> 200 Mins</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Int Minutes</li>
+                        <li><i class="fas fa-check"></i> Valid for 30 Days</li>
+                        <li><i class="fas fa-check"></i> Super Speed</li>
+                    </ul>
+                </div>
+                
+                <div class="plan-card featured">
+                    <div class="featured-badge">Best Deal</div>
+                    <h3 class="plan-name">PREMIUM PACKAGE</h3>
+                    <div class="plan-price">
+                        <span class="price">$30</span>
+                        <span class="period">/package</span>
+                    </div>
+                    <button class="btn btn-primary">Recharge Now!</button>
+                    <div class="plan-divider"></div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Unlimited GB</li>
+                        <li><i class="fas fa-check"></i> 20MBps</li>
+                        <li><i class="fas fa-check"></i> 200 Mins</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Int Minutes</li>
+                        <li><i class="fas fa-check"></i> Valid for 30 Days</li>
+                        <li><i class="fas fa-check"></i> Super Speed</li>
+                    </ul>
+                </div>
+                
+                <div class="plan-card">
+                    <h3 class="plan-name">ADSL+ PACKAGE</h3>
+                    <div class="plan-price">
+                        <span class="price">$50</span>
+                        <span class="period">/package</span>
+                    </div>
+                    <button class="btn btn-primary">Recharge Now!</button>
+                    <div class="plan-divider"></div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Unlimited GB</li>
+                        <li><i class="fas fa-check"></i> 20MBps</li>
+                        <li><i class="fas fa-check"></i> 200 Mins</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Int Minutes</li>
+                        <li><i class="fas fa-check"></i> Valid for 30 Days</li>
+                        <li><i class="fas fa-check"></i> Super Speed</li>
+                    </ul>
+                </div>
+                
+                <div class="plan-card">
+                    <h3 class="plan-name">ADSL+ PACKAGE</h3>
+                    <div class="plan-price">
+                        <span class="price">$90</span>
+                        <span class="period">/package</span>
+                    </div>
+                    <button class="btn btn-primary">Recharge Now!</button>
+                    <div class="plan-divider"></div>
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Unlimited GB</li>
+                        <li><i class="fas fa-check"></i> 20MBps</li>
+                        <li><i class="fas fa-check"></i> 200 Mins</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Int Minutes</li>
+                        <li><i class="fas fa-check"></i> Valid for 30 Days</li>
+                        <li><i class="fas fa-check"></i> Super Speed</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-  
-         
-          
-          
+        <!-- MySMS Section -->
+        <section class="mysms-section">
+            <div class="mysms-container">
+                <div class="mysms-content">
+                    <h2 class="section-title">Reach and Engage More Customers With MYSMS</h2>
+                    <p class="section-description">
+                        90% of SMS messages are read within 3 minutes. If you're not engaging with your customers and prospects through text messages, you're missing out on one of the most available and engaged channels for your business.
+                    </p>
+                    <button class="btn btn-secondary">Start for Free <i class="fas fa-arrow-right"></i></button>
+                </div>
+                <div class="mysms-image">
+                    <img src="Screenshot 2025-05-09 103931.png" alt="MySMS Platform">
+                </div>
+            </div>
+        </section>
 
- <script src="./hormuud.js"></script> 
+        <!-- Blog Section -->
+        <section class="blog-section">
+            <div class="section-header">
+                <h2 class="section-title">Latest Blog Updates From Hormuud</h2>
+                <p class="section-subtitle">Read all the latest information, Blogs, Updates, Offers and much more</p>
+            </div>
+            
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="KUDHAN.avif" alt="Kudhan Service">
+                    </div>
+                    <div class="blog-content">
+                        <h3 class="blog-title">Unlimited Everything at Your Fingertips! Explore Our Newest Service</h3>
+                        <p class="blog-excerpt">
+                            We are thrilled to announce KUDHAN, our newest addition to our fantastic service lineup! Designed to cater to the ever-growing needs of our customers, KUDHAN offers unparalleled connectivity options with two flexible packages: daily and monthly. Now, you can enjoy unlimited Internet, calls, and IPTV (Nasiye) with ease and affordability.
+                        </p>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="Renewable20.avif" alt="Renewable Energy">
+                    </div>
+                    <div class="blog-content">
+                        <h3 class="blog-title">Sustainable Connectivity: Our Commitment to Renewable Energy</h3>
+                        <p class="blog-excerpt">
+                            We are thrilled to announce KUDHAN, our newest addition to our fantastic service lineup! Designed to cater to the ever-growing needs of our customers, KUDHAN offers unparalleled connectivity options with two flexible packages: daily and monthly. Now, you can enjoy unlimited Internet, calls, and IPTV (Nasiye) with ease and affordability.
+                        </p>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="KUDHAN.avif" alt="Kudhan Service">
+                    </div>
+                    <div class="blog-content">
+                        <h3 class="blog-title">Unlimited Everything at Your Fingertips! Explore Our Newest Service</h3>
+                        <p class="blog-excerpt">
+                            We are thrilled to announce KUDHAN, our newest addition to our fantastic service lineup! Designed to cater to the ever-growing needs of our customers, KUDHAN offers unparalleled connectivity options with two flexible packages: daily and monthly. Now, you can enjoy unlimited Internet, calls, and IPTV (Nasiye) with ease and affordability.
+                        </p>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Newsletter Section -->
+            <div class="newsletter-section">
+                <div class="newsletter-content">
+                    <div class="footer-logo">
+                        <img src="Hormuud logo.svg" alt="Hormuud Logo">
+                    </div>
+                    <div class="newsletter-info">
+                        <h3>Subscribe to our Newsletter</h3>
+                        <p>Get all the latest information, Sales and Offers.</p>
+                    </div>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email Address Here" class="newsletter-input" required>
+                        <button type="submit" class="btn btn-primary">Subscribe <i class="fas fa-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Footer Links -->
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <strong>Phone:</strong>
+                            <span>Call Free 615413872</span>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Email:</strong>
+                            <span>manaxayare@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Address:</strong>
+                            <span>Darusalam-Mogadishu-Somalia</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Corporate</h4>
+                    <ul class="footer-menu">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#press">Press Release</a></li>
+                        <li><a href="#responsibility">Social Responsibilities</a></li>
+                        <li><a href="#service">Customer Service</a></li>
+                        <li><a href="#terms">Terms And Conditions</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Personal</h4>
+                    <ul class="footer-menu">
+                        <li><a href="#period">Period</a></li>
+                        <li><a href="#postpaid">PostPaid</a></li>
+                        <li><a href="#anfac">AnfacPlus</a></li>
+                        <li><a href="#adsl">ADSL Plus</a></li>
+                        <li><a href="#offers">Offers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Business</h4>
+                    <ul class="footer-menu">
+                        <li><a href="#mysms">MySMS</a></li>
+                        <li><a href="#api">Messaging API</a></li>
+                        <li><a href="#enterprise">Enterprise Internet</a></li>
+                        <li><a href="#ivr">IVR (Call Center)</a></li>
+                        <li><a href="#ussd">USSD Shortcode</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <div class="footer-divider"></div>
+                <div class="footer-bottom-content">
+                    <div class="copyright">
+                        <p>&copy; 2025 Hormuud. All Rights Reserved.</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61565602565542&mibextid=ZbWKwL" target="_blank" rel="noopener" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://wa.me/message/AYEQVO2HN26PJ1" target="_blank" rel="noopener" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.instagram.com/wll_manaxa/profilecard/?igsh=MWE2eWd0bDJncTh3dw==" target="_blank" rel="noopener" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="hormuud.js"></script>
 </body>
 </html>
